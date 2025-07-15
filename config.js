@@ -42,11 +42,13 @@ module.exports = {
     CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // Custom reaction emojis
     
     STICKER_NAME: process.env.STICKER_NAME || "MEGALODON-MD",     // Sticker pack name
-   
+
     
     // ===== MEDIA & AUTOMATION =====
     AUTO_RECORDING: process.env.AUTO_RECORDING || "false",      // Auto-record voice notes?
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",            // Show typing indicator?
+
+    AUTO_TYPING: process.env.AUTO_TYPING || "false",   // Show typing indicator?
+
     MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/roubzi.jpg",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
@@ -54,12 +56,15 @@ module.exports = {
     //antibot true or false
     ANTI_DELETE: process.env.ANTI_DELETE || "true",
     ANTI_CALL: process.env.ANTI_CALL || "true",
+
+    REJECT_MSG: process.env.REJECT_MSG || "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ ιɴ тнιѕ ɴᴜмвєʀ уσυ ∂σɴт нανє ᴘєʀмιѕѕισɴ 📵*",
     ANTI_BAD: process.env.ANTI_BAD || "false",                  // Block bad words?
+
     ANTI_LINK_KICK: process.env.ANTILINK_KICK || "false",
 // make anti link true,false for groups 
     ANTIVIEW_ONCE: process.env.ANTIVIEW_ONCE || "false",
     
-   ANTILINK_WARN: process.env.ANTILINK_WARN || "false",
+    ANTILINK_WARN: process.env.ANTILINK_WARN || "false",
     
      ANTILINK: process.env.ANTILINK || "false",
     
@@ -68,7 +73,7 @@ module.exports = {
     DELETE_LINKS: process.env.DELETE_LINKS || "false",  
     // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", 
-    // Log deleted messages (or 'same' to resend)
+    // Log deleted messages (or 'inbox' to resend)
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
    
